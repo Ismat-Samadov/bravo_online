@@ -1,0 +1,176 @@
+WOLT BRAVO SUPERMARKET - COMPREHENSIVE MARKETING ANALYSIS
+================================================================================
+Generated: 2026-02-03 21:07:01
+Total Products Analyzed: 4812
+
+
+
+================================================================================
+💰 PRICING ANALYSIS
+================================================================================
+
+Overall Pricing:
+  Products with prices: 4812/4812
+  Average Price: 6.20 AZN
+  Median Price: 3.39 AZN
+  Min Price: 0.08 AZN
+  Max Price: 386.25 AZN
+
+Price Distribution:
+  Under 0.50 AZN    105 (  2.2%) █
+  0.50-1 AZN        501 ( 10.4%) █████
+  1-3 AZN          1602 ( 33.3%) ████████████████
+  3-5 AZN           846 ( 17.6%) ████████
+  5-10 AZN         1024 ( 21.3%) ██████████
+  10-20 AZN         494 ( 10.3%) █████
+  20-50 AZN         203 (  4.2%) ██
+  Over 50 AZN        37 (  0.8%) 
+
+Discounts:
+  Products on sale: 1236 (25.7%)
+  Average discount: 25.3%
+
+  Top 10 Discounts:
+     1.  58.5% off - Save 2.10 AZN - Sibiryak Qarabashaq 800qr
+     2.  58.0% off - Save 0.40 AZN - Tach Plastik Stəkan 6-lı Kiçik Cofe
+     3.  58.0% off - Save 20.66 AZN - Aura Tualet Kağızı  32 Rulon 3 Qat
+     4.  58.0% off - Save 20.66 AZN - Aura Tualet Kağızı  32 Rulon 3 Qat
+     5.  56.6% off - Save 2.60 AZN - Smile Antibakterial Nəm Salfet 60əd
+     6.  56.3% off - Save 1.29 AZN - Birpa Tərəvəz Soyan Agn-086
+     7.  55.0% off - Save 4.34 AZN - IR Həkim Çantası A27
+     8.  55.0% off - Save 1.21 AZN - Cinn Velikan Günəbaxan Tumu Duzlu 100qr
+     9.  54.4% off - Save 13.10 AZN - Ariel Rəngli Paltarlar üçün 3kq
+    10.  54.4% off - Save 13.10 AZN - Ariel Ağ Paltarlar üçün 3kq
+
+================================================================================
+📊 CATEGORY ANALYSIS
+================================================================================
+
+Top 20 Categories by Product Count:
+   1. Unknown                                                   67 (  1.4%)
+   2. Kolbasalar                                                50 (  1.0%)
+   3. Dondurmalar                                               50 (  1.0%)
+   4. Kərə Yağı və Bitki Tərkibli Yağlar                        50 (  1.0%)
+   5. Pendirlər                                                 50 (  1.0%)
+   6. Mayonezlər                                                50 (  1.0%)
+   7. Yoqurt və Kokteyllər                                      50 (  1.0%)
+   8. Zeytun Yağları                                            50 (  1.0%)
+   9. Makaronlar                                                50 (  1.0%)
+  10. Ədviyyatlar                                               50 (  1.0%)
+  11. Ketçup, Xardal və Narşərablar                             50 (  1.0%)
+  12. Bişirmə Əlavələri                                         50 (  1.0%)
+  13. Qara Çaylar                                               50 (  1.0%)
+  14. Həll Olunan Qəhvələr                                      50 (  1.0%)
+  15. Balıq Konservləri                                         50 (  1.0%)
+  16. Konservləşdirilmiş Tərəvəzlər və Pastalar                 50 (  1.0%)
+  17. Dietik Məhsullar                                          50 (  1.0%)
+  18. Şokolad Barları                                           50 (  1.0%)
+  19. Şokolad Qutuları                                          50 (  1.0%)
+  20. Qaleta və Peçenyelər                                      50 (  1.0%)
+
+Top 15 Most Expensive Categories (by avg price):
+   1. Elit İçkilər (Digər)                                 55.87 AZN (n=35)
+   2. Viskilər                                             51.21 AZN (n=26)
+   3. Zeytun Məhsulları Çəki ilə                           27.75 AZN (n=3)
+   4. Hisə Verilmiş Balıqlar                               23.95 AZN (n=1)
+   5. Çəhrayı Şərablar                                     22.30 AZN (n=12)
+   6. Oynaq Şərablar                                       21.88 AZN (n=11)
+   7. Zeytun Yağları                                       20.07 AZN (n=50)
+   8. Uşaq Bezləri və Nəm Gigiyenik Salfetlər              20.05 AZN (n=50)
+   9. Araqlar                                              19.43 AZN (n=50)
+  10. Ətir və Kaloniyalar                                  18.82 AZN (n=9)
+  11. Qırmızı Şərablar                                     17.60 AZN (n=50)
+  12. Ağ Şərablar                                          17.28 AZN (n=37)
+  13. Günəş Kremi və SPF-lər                               16.64 AZN (n=4)
+  14. Dənəvər Qəhvələr                                     16.49 AZN (n=2)
+  15. Şamlar və Aromatik Difüzorlar                        15.55 AZN (n=1)
+
+Top 15 Cheapest Categories (by avg price):
+   1. 3-ü 1-də Qəhvələr                                     0.47 AZN (n=44)
+   2. Zavod Çörəkləri                                       0.65 AZN (n=1)
+   3. Bulyonlar                                             0.83 AZN (n=18)
+   4. Ayran, Kefir və Dovğalar                              1.04 AZN (n=16)
+   5. Yoqurt və Kokteyllər                                  1.08 AZN (n=50)
+   6. Fabrik Çörəkləri                                      1.13 AZN (n=5)
+   7. Ədviyyatlar                                           1.17 AZN (n=50)
+   8. Tumlar                                                1.19 AZN (n=50)
+   9. Qazsız Sular                                          1.23 AZN (n=49)
+  10. Soyuq Çaylar, Kofelər və Digər Şirin İçkilər          1.26 AZN (n=50)
+  11. Un Məmulatları Ədəd ilə                               1.33 AZN (n=13)
+  12. Şokolad Batonları                                     1.42 AZN (n=19)
+  13. Cola və Sodalar                                       1.43 AZN (n=50)
+  14. Qazlı Sular                                           1.43 AZN (n=44)
+  15. Saqqızlar                                             1.48 AZN (n=48)
+
+================================================================================
+📦 STOCK AVAILABILITY ANALYSIS
+================================================================================
+
+Stock Status:
+  In stock: 4788 (99.5%)
+  Out of stock: 24 (0.5%)
+
+Top 10 Categories with Most Out-of-Stock Items:
+   1. Unknown                                              6/ 67 (  9.0%)
+   2. Energetik və Sport İçkilər                           5/ 32 ( 15.6%)
+   3. Krem Pastalar və Şokolad Yağları                     3/ 29 ( 10.3%)
+   4. Qaymaqlar                                            2/ 13 ( 15.4%)
+   5. Elit İçkilər (Digər)                                 2/ 35 (  5.7%)
+   6. Ayran, Kefir və Dovğalar                             1/ 16 (  6.2%)
+   7. Düyülər                                              1/ 39 (  2.6%)
+   8. Şəkər Məhsulları                                     1/ 24 (  4.2%)
+   9. Həll Olunan Qəhvələr                                 1/ 50 (  2.0%)
+  10. Sıyıqlar                                             1/ 23 (  4.3%)
+
+Low Stock Warnings (< 10 units):
+  2426 products running low
+
+================================================================================
+🌟 SPECIAL PRODUCTS ANALYSIS
+================================================================================
+Alcoholic Products: 183
+  Average alcoholic product price: 17.55 AZN
+
+Product Tags Distribution:
+  UNKNOWN: 1335 (27.7%)
+  PERISHABLE: 486 (10.1%)
+  ALCOHOL: 279 (5.8%)
+  WINE: 111 (2.3%)
+  TOBACCO: 88 (1.8%)
+  BEER: 51 (1.1%)
+  SMOKERS: 41 (0.9%)
+  OVER_THE_COUNTER: 8 (0.2%)
+  BABY_FORMULA: 6 (0.1%)
+  SENSITIVE_DATA: 4 (0.1%)
+
+================================================================================
+🎯 MARKETING INSIGHTS & RECOMMENDATIONS
+================================================================================
+
+1. HIGH-VALUE PRODUCT OPPORTUNITIES:
+   • 233 premium products (>20 AZN)
+   • Average premium price: 37.27 AZN
+   • Recommendation: Create luxury product bundles and targeted campaigns
+
+2. OPTIMAL PRICE POINTS:
+   • Median price: 3.39 AZN
+   • Most common range: 1-3 AZN (1602 products)
+   • Recommendation: Focus promotions around 3 AZN products
+
+3. TOP PERFORMING CATEGORY:
+   • Unknown: 67 products
+   • Recommendation: Feature this category in homepage banners
+
+4. RESTOCK MARKETING OPPORTUNITIES:
+   • 24 out-of-stock products
+   • Recommendation: Set up 'Back in Stock' email notifications
+
+5. DISCOUNT OPTIMIZATION:
+   • Current discount rate: 25.7% of products
+   • Average discount: 25.3%
+   • Recommendation: Test 20%-30% discount range for conversions
+
+6. PRODUCT ASSORTMENT:
+   • Total unique products: 4812
+   • Average products per category: 25.9
+   • Recommendation: Monitor top 20 products weekly for trend analysis
