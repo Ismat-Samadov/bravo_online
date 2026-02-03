@@ -323,3 +323,217 @@ With these strategic adjustments, Bravo is positioned to strengthen market leade
 **Analysis Period:** Current state assessment
 
 *For questions or deeper analysis on specific categories, contact the business intelligence team.*
+
+---
+
+## Technical Appendix: Running the Analysis
+
+### Setup Instructions
+
+#### 1. Create Python Virtual Environment
+
+```bash
+# Navigate to project directory
+cd /Users/ismatsamadov/bravo_online
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate  # On macOS/Linux
+# OR
+venv\Scripts\activate  # On Windows
+```
+
+#### 2. Install Required Libraries
+
+```bash
+# Option 1: Install from requirements file (recommended)
+pip install -r requirements.txt
+
+# Option 2: Install manually
+pip install requests matplotlib seaborn pandas numpy
+```
+
+**Required Libraries:**
+- `requests` - API calls and data scraping
+- `matplotlib` - Chart generation
+- `seaborn` - Advanced visualizations
+- `pandas` - Data analysis
+- `numpy` - Numerical operations
+- `pillow` - Image processing (optional)
+
+#### 3. Run Complete Data Collection
+
+```bash
+# Step 1: Scrape all products from Wolt Bravo (2-3 minutes)
+python3 scripts/wolt_scraper_complete.py
+
+# This creates:
+# - data/bravo_products_complete.json (4,812 products)
+# - data/bravo_categories_complete.json (223 categories)
+# - data/bravo_products_complete.csv (CSV export)
+```
+
+#### 4. Generate Business Intelligence Charts
+
+```bash
+# Step 2: Generate all 10 business charts
+python3 generate_charts.py
+
+# This creates:
+# - charts/01_category_portfolio.png
+# - charts/02_pricing_tiers.png
+# - charts/03_premium_categories.png
+# - charts/04_discount_strategy.png
+# - charts/05_stock_risk.png
+# - charts/06_category_performance_matrix.png
+# - charts/07_competitive_positioning.png
+# - charts/08_revenue_concentration.png
+# - charts/09_discount_impact.png
+# - charts/10_market_segmentation.png
+```
+
+#### 5. Generate Marketing Analysis Report (Optional)
+
+```bash
+# Step 3: Generate detailed marketing analysis
+python3 scripts/wolt_marketing_analysis.py
+
+# This creates:
+# - data/bravo_products_analyzed.csv (normalized data)
+# - data/bravo_marketing_report.txt (detailed report)
+```
+
+### Complete Workflow for Future Updates
+
+**Option 1: Automated Script (Easiest)**
+
+```bash
+# One-command complete update (recommended)
+./update_data.sh
+
+# This script automatically:
+# - Creates/activates virtual environment
+# - Installs dependencies
+# - Scrapes latest data
+# - Generates all charts
+# - Creates marketing report
+```
+
+**Option 2: Manual Steps**
+
+```bash
+# 1. Activate environment
+source venv/bin/activate
+
+# 2. Scrape latest data
+python3 scripts/wolt_scraper_complete.py
+
+# 3. Generate charts
+python3 generate_charts.py
+
+# 4. Generate marketing report (optional)
+python3 scripts/wolt_marketing_analysis.py
+
+# Done! All data and charts are updated.
+```
+
+### File Structure Reference
+
+```
+bravo_online/
+├── README.md                      # This business intelligence report
+├── requirements.txt               # Python dependencies
+├── update_data.sh                 # Automated update script
+├── generate_charts.py             # Chart generation script
+│
+├── venv/                          # Virtual environment (created by you)
+│
+├── scripts/                       # Data collection scripts
+│   ├── wolt_scraper_complete.py   # Main scraper (use this)
+│   ├── wolt_marketing_analysis.py # Marketing analysis
+│   └── ... (other utility scripts)
+│
+├── data/                          # Generated data files (gitignored)
+│   ├── bravo_products_complete.json
+│   ├── bravo_categories_complete.json
+│   ├── bravo_products_complete.csv
+│   ├── bravo_products_analyzed.csv
+│   └── bravo_marketing_report.txt
+│
+├── charts/                        # Generated visualizations
+│   ├── 01_category_portfolio.png
+│   ├── 02_pricing_tiers.png
+│   ├── 03_premium_categories.png
+│   ├── 04_discount_strategy.png
+│   ├── 05_stock_risk.png
+│   ├── 06_category_performance_matrix.png
+│   ├── 07_competitive_positioning.png
+│   ├── 08_revenue_concentration.png
+│   ├── 09_discount_impact.png
+│   └── 10_market_segmentation.png
+│
+└── docs/                          # Technical documentation
+    ├── QUICKSTART.md              # Quick reference guide
+    ├── SUMMARY.md                 # Project summary
+    └── WOLT_BRAVO_GUIDE.md        # Complete technical guide
+```
+
+### Scheduling Automated Updates
+
+For regular data updates (e.g., daily or weekly):
+
+**macOS/Linux (cron):**
+```bash
+# Edit crontab
+crontab -e
+
+# Add daily update at 2 AM
+0 2 * * * cd /Users/ismatsamadov/bravo_online && source venv/bin/activate && python3 scripts/wolt_scraper_complete.py && python3 generate_charts.py
+```
+
+**Windows (Task Scheduler):**
+Create a batch file `update_data.bat`:
+```batch
+cd C:\path\to\bravo_online
+call venv\Scripts\activate
+python scripts\wolt_scraper_complete.py
+python generate_charts.py
+```
+
+### Troubleshooting
+
+**Issue: "Module not found" error**
+```bash
+# Solution: Ensure virtual environment is activated and dependencies installed
+source venv/bin/activate
+pip install requests matplotlib seaborn pandas numpy
+```
+
+**Issue: No data/bravo_products_complete.json file**
+```bash
+# Solution: Run the scraper first
+python3 scripts/wolt_scraper_complete.py
+```
+
+**Issue: Charts not generating**
+```bash
+# Solution: Install matplotlib dependencies
+pip install matplotlib pillow
+```
+
+### Data Freshness
+
+- **Scraping Duration**: 2-3 minutes for complete data
+- **Chart Generation**: ~30 seconds for all 10 charts
+- **Total Update Time**: ~3-4 minutes end-to-end
+
+**Recommended Update Frequency:**
+- Daily: For price monitoring and promotional tracking
+- Weekly: For inventory and category analysis
+- Monthly: For strategic business reviews
+
+---
+
+*Last updated: February 2026*

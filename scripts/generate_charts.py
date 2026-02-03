@@ -32,11 +32,15 @@ COLORS = {
 
 class BravoBusinessIntelligence:
     def __init__(self, data_file='data/bravo_products_complete.json'):
-        self.data_file = Path(data_file)
-        self.products = []
-        self.charts_dir = Path('charts')
+        # Get the project root directory (where this script should be run from)
+        self.project_root = Path(__file__).parent.absolute()
+
+        # Set paths relative to project root
+        self.data_file = self.project_root / data_file
+        self.charts_dir = self.project_root / 'charts'
         self.charts_dir.mkdir(exist_ok=True)
 
+        self.products = []
         self.load_data()
 
     def load_data(self):
@@ -100,7 +104,7 @@ class BravoBusinessIntelligence:
 
         plt.gca().invert_yaxis()
         plt.tight_layout()
-        plt.savefig('charts/01_category_portfolio.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '01_category_portfolio.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 1: Category Portfolio")
 
@@ -133,7 +137,7 @@ class BravoBusinessIntelligence:
             plt.text(i, val + 50, str(val), ha='center', fontweight='bold')
 
         plt.tight_layout()
-        plt.savefig('charts/02_pricing_tiers.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '02_pricing_tiers.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 2: Pricing Tiers")
 
@@ -156,7 +160,7 @@ class BravoBusinessIntelligence:
             plt.text(val + 1, i, f'{val:.2f} AZN', va='center', fontweight='bold')
 
         plt.tight_layout()
-        plt.savefig('charts/03_premium_categories.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '03_premium_categories.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 3: Premium Categories")
 
@@ -198,7 +202,7 @@ class BravoBusinessIntelligence:
 
         plt.suptitle('Promotional Strategy Analysis', fontsize=16, fontweight='bold', y=1.02)
         plt.tight_layout()
-        plt.savefig('charts/04_discount_strategy.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '04_discount_strategy.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 4: Discount Strategy")
 
@@ -229,7 +233,7 @@ class BravoBusinessIntelligence:
             plt.text(i, val + 50, f'{val}\n({pct:.1f}%)', ha='center', fontweight='bold')
 
         plt.tight_layout()
-        plt.savefig('charts/05_stock_risk.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '05_stock_risk.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 5: Stock Risk Assessment")
 
@@ -274,7 +278,7 @@ class BravoBusinessIntelligence:
         plt.colorbar(scatter, label='Avg Price (AZN)')
         plt.grid(True, alpha=0.3)
         plt.tight_layout()
-        plt.savefig('charts/06_category_performance_matrix.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '06_category_performance_matrix.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 6: Category Performance Matrix")
 
@@ -317,7 +321,7 @@ class BravoBusinessIntelligence:
         plt.suptitle('Competitive Price Positioning - Market Segmentation',
                     fontsize=16, fontweight='bold', y=0.98)
         plt.tight_layout()
-        plt.savefig('charts/07_competitive_positioning.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '07_competitive_positioning.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 7: Competitive Positioning")
 
@@ -351,7 +355,7 @@ class BravoBusinessIntelligence:
             plt.text(val + 5, i, f'{val:.0f}', va='center', fontweight='bold', fontsize=9)
 
         plt.tight_layout()
-        plt.savefig('charts/08_revenue_concentration.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '08_revenue_concentration.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 8: Revenue Concentration")
 
@@ -392,7 +396,7 @@ class BravoBusinessIntelligence:
             ax.text(row['savings'] + 0.1, i, label, va='center', fontsize=9, fontweight='bold')
 
         plt.tight_layout()
-        plt.savefig('charts/09_discount_impact.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '09_discount_impact.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 9: Discount Impact")
 
@@ -451,7 +455,7 @@ class BravoBusinessIntelligence:
 
         plt.suptitle('Market Segmentation Dashboard', fontsize=18, fontweight='bold', y=0.995)
         plt.tight_layout()
-        plt.savefig('charts/10_market_segmentation.png', dpi=300, bbox_inches='tight')
+        plt.savefig(self.charts_dir / '10_market_segmentation.png', dpi=300, bbox_inches='tight')
         plt.close()
         print("✓ Chart 10: Market Segmentation")
 
