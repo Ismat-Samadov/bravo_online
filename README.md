@@ -2,6 +2,11 @@
 
 A complete solution for scraping food price and product data from supermarket mobile apps using mitmproxy and iOS device.
 
+## Quick Links
+
+- **[Wolt Bravo Scraper Guide](WOLT_BRAVO_GUIDE.md)** - Complete guide for scraping Bravo supermarket on Wolt
+- **General scraping tools** - Works with any supermarket app (see below)
+
 ## Setup
 
 ### 1. Install Requirements

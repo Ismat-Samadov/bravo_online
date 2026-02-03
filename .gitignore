@@ -1,2 +1,25 @@
 .claude
 __pycache__
+
+# Captured data
+# captured_requests.json
+# wolt_captured.json
+# wolt_api_response.json
+
+# Generated product data
+# bravo_products*.json
+# bravo_products*.csv
+# bravo_categories*.json
+# bravo_categories*.csv
+# scraped_products.json
+# products.json
+# products.csv
+# scraper_config.json
+
+# Reports
+# marketing_report.txt
+
+# Temporary files
+*.pyc
+*.log
+.DS_Store
