@@ -3,9 +3,16 @@
 # Bravo Supermarket Data Update Script
 # This script runs the complete data collection and analysis workflow
 
+# Get the directory where the script is located
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# Go to project root (one level up from scripts/)
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_ROOT"
+
 echo "=========================================="
 echo "Bravo Supermarket Data Update"
 echo "=========================================="
+echo "Working directory: $(pwd)"
 echo ""
 
 # Check if virtual environment exists
@@ -23,7 +30,7 @@ source venv/bin/activate
 
 # Check and install dependencies
 echo "🔄 Checking dependencies..."
-pip install -q -r requirements.txt
+pip install -q -r scripts/requirements.txt
 echo "✓ Dependencies ready"
 echo ""
 
@@ -44,7 +51,7 @@ fi
 echo "=========================================="
 echo "Step 2: Generating Business Charts"
 echo "=========================================="
-python3 generate_charts.py
+python3 scripts/generate_charts.py
 echo ""
 
 # Step 3: Generate marketing report (optional)

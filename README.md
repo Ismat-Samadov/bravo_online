@@ -349,7 +349,7 @@ venv\Scripts\activate  # On Windows
 
 ```bash
 # Option 1: Install from requirements file (recommended)
-pip install -r requirements.txt
+pip install -r scripts/requirements.txt
 
 # Option 2: Install manually
 pip install requests matplotlib seaborn pandas numpy
@@ -379,7 +379,7 @@ python3 scripts/wolt_scraper_complete.py
 
 ```bash
 # Step 2: Generate all 10 business charts
-python3 generate_charts.py
+python3 scripts/generate_charts.py
 
 # This creates:
 # - charts/01_category_portfolio.png
@@ -411,7 +411,7 @@ python3 scripts/wolt_marketing_analysis.py
 
 ```bash
 # One-command complete update (recommended)
-./update_data.sh
+./scripts/update_data.sh
 
 # This script automatically:
 # - Creates/activates virtual environment
@@ -431,7 +431,7 @@ source venv/bin/activate
 python3 scripts/wolt_scraper_complete.py
 
 # 3. Generate charts
-python3 generate_charts.py
+python3 scripts/generate_charts.py
 
 # 4. Generate marketing report (optional)
 python3 scripts/wolt_marketing_analysis.py
@@ -444,14 +444,15 @@ python3 scripts/wolt_marketing_analysis.py
 ```
 bravo_online/
 ├── README.md                      # This business intelligence report
-├── requirements.txt               # Python dependencies
-├── update_data.sh                 # Automated update script
-├── generate_charts.py             # Chart generation script
+├── .gitignore                     # Git ignore rules
 │
-├── venv/                          # Virtual environment (created by you)
+├── venv/                          # Virtual environment (you create this)
 │
-├── scripts/                       # Data collection scripts
-│   ├── wolt_scraper_complete.py   # Main scraper (use this)
+├── scripts/                       # All scripts and utilities
+│   ├── requirements.txt           # Python dependencies
+│   ├── update_data.sh             # Automated update script
+│   ├── generate_charts.py         # Chart generation script
+│   ├── wolt_scraper_complete.py   # Main scraper ⭐
 │   ├── wolt_marketing_analysis.py # Marketing analysis
 │   └── ... (other utility scripts)
 │
@@ -490,16 +491,23 @@ For regular data updates (e.g., daily or weekly):
 crontab -e
 
 # Add daily update at 2 AM
-0 2 * * * cd /Users/ismatsamadov/bravo_online && source venv/bin/activate && python3 scripts/wolt_scraper_complete.py && python3 generate_charts.py
+0 2 * * * cd /Users/ismatsamadov/bravo_online && ./scripts/update_data.sh
 ```
 
 **Windows (Task Scheduler):**
 Create a batch file `update_data.bat`:
 ```batch
 cd C:\path\to\bravo_online
+call scripts\update_data.sh
+```
+
+Or run commands manually:
+```batch
+cd C:\path\to\bravo_online
 call venv\Scripts\activate
 python scripts\wolt_scraper_complete.py
-python generate_charts.py
+python scripts\generate_charts.py
+python scripts\wolt_marketing_analysis.py
 ```
 
 ### Troubleshooting
